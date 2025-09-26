@@ -85,7 +85,7 @@
       for(var i = 0; i< selectedLayers.length; i++){
         var layer = selectedLayers[i];
         var layerOverrides = layer.property("ADBE Layer Overrides");
-        if(layerOverrides.numProperties > 1){
+        if(layerOverrides.numProperties > 0){
           checkProperties(layerOverrides, props);
           continue
         }
